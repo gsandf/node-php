@@ -1,7 +1,7 @@
 FROM php:latest
 
-# install curl and git
-RUN apt-get -y update && apt-get install -y curl git
+# install curl, git, and rsync
+RUN apt-get -y update && apt-get install -y curl git rsync
 
 # install Node.js LTS and Yarn
 RUN curl -sL 'https://deb.nodesource.com/setup_12.x' | bash /dev/stdin
